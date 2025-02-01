@@ -43,7 +43,7 @@ Key components include:
     -   Install the Rust Toolchain (`rustup` and `cargo`).
 
 2.  **Project Setup:**
-    -   Clone the repository: `git clone <repository-url>`
+    -   Clone the repository: `git clone https://github.com/0x53c/0XIDE.git`
     -   Navigate to the project directory: `cd oxide`
     -   Initialize the project
         -   `cargo new <project>`
