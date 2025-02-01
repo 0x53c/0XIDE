@@ -76,5 +76,3 @@ This is a personal project, so contributions are currently not expected. However
 
 ## License
 
-[Optional: Add a license if you wish]
-
