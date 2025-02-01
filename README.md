@@ -1,78 +1,69 @@
-# Oxide: Personal Cloud Project
+# Oxide: CKA Preparation Project
 
 ## Overview
 
-"Oxide" is a personal cloud project focused on learning and experimenting with modern software architecture patterns, API design, and distributed systems. The primary goals include:
+"Oxide" is now a hands-on project designed to help you prepare for the Certified Kubernetes Administrator (CKA) exam. This project provides a real-world environment where you can practice CKA-related concepts and develop practical skills using Kubernetes. While this is a personal project, it is also a guided learning tool, and the goal is to provide an environment where you can learn and practice the fundamentals needed for CKA certification.
 
--   Developing a scalable API-first system.
--   Gaining practical experience with Kubernetes, Docker, Rust, and other cloud-native technologies.
--   Implementing secure secrets management using Doppler.
--   Exploring microservices architecture and deployment strategies.
--   Creating a platform where different services can be deployed and scaled as needed.
+## Key Goals
 
-This is primarily a learning project, so flexibility and experimentation are encouraged!
+*   Gain practical experience with Kubernetes concepts, configurations, and operations.
+*   Master key topics required for the CKA exam.
+*   Build a hands-on environment for testing and experimentation.
+*   Provide a guided learning path to cover the main areas covered by the CKA curriculum.
+*   Apply your learning to a real project and see immediate results
 
-## Technologies Used
+## CKA Curriculum Alignment
 
--   **Containerization:** Docker (Orbstack)
--   **Orchestration:** Kubernetes
--   **Programming Language:** Rust (with potential exploration of Zig for specific components)
--   **Secrets Management:** Doppler
--   **API Design:** OpenAPI/Swagger
--   **Data Storage:** NAS with potential usage of relational databases
--   **API Gateway:** Nginx or Traefik
+This project is structured to align with the key areas of the CKA exam:
 
-## Architecture
+*   **Core Concepts:** Pods, Deployments, Services, Namespaces.
+*   **Networking:** CNI, Network Policies, Ingress.
+*   **Storage:** Volumes, Persistent Volumes, Storage Classes.
+*   **Security:** RBAC, Secrets, Security Contexts.
+*   **Scheduling:** Node Selectors, Affinity, Taints and Tolerations.
+*   **Cluster Maintenance:** Upgrades, Backups, Monitoring.
+*   **Troubleshooting:** Debugging pods, analyzing logs.
+*   **Configuration:** ConfigMaps, Environment Variables.
 
-The system will be built as a distributed system, leveraging containerization with Docker and orchestration with Kubernetes. APIs will be the main focus with well-defined endpoints. NAS will act as network storage. Doppler will manage all secrets.
+## Technologies
 
-Key components include:
+*   **Containerization:** Docker or Orbstack (as a container runtime).
+*   **Orchestration:** Kubernetes (using MicroK8s, K3s, or Minikube).
+*   **Programming Language:** Rust (for building tooling and services - optional).
 
--   **API Gateway:** Central entry point for all API requests, handling routing, authentication, and authorization.
--   **Microservices:** Individual services that handle specific business functionalities.
--   **Database/Data Store:** Persistent data storage.
--   **NAS Storage:** Network Attached Storage for file storage.
--   **Doppler:** Secure secrets management system.
-
-## Getting Started
+## Project Setup
 
 1.  **Prerequisites:**
-    -   Install Docker on your machine.
-    -   Install `kubectl` for Kubernetes interaction.
-    -   Install the Doppler CLI.
-    -   Install the Rust Toolchain (`rustup` and `cargo`).
+    *   Install Docker or Orbstack.
+    *   Install `kubectl` for Kubernetes interaction.
+    *   Install the Rust toolchain (optional, if you plan to write tooling or services in Rust).
 
-2.  **Project Setup:**
-    -   Clone the repository: `git clone https://github.com/0x53c/0XIDE.git`
-    -   Navigate to the project directory: `cd oxide`
-    -   Initialize the project
-        -   `cargo new <project>`
-        -   Run `cargo build`
+2.  **Project Initialization:**
+    *   Clone the repository: `git clone <repository-url>`
+    *   Navigate to the project directory: `cd oxide`
 
-3. **Running the service locally**
-     -   Build docker image: `docker build . -t <service-name>`
-     -   Run the container: `docker run <service-name>`
-
-4.  **Configure Doppler**
-    -   Create doppler project and development environment
-    -   Set up all required secrets for the project
-    -   Install doppler CLI and login
+3. **Getting Started with CKA Tasks**
+    *  Follow the tasks in the project board.
+    * Each task will help you to understand and apply a core concept that will be tested on the CKA exam.
 
 ## Development Workflow
 
--   **API Design:** Define the API using OpenAPI/Swagger.
--   **Service Development:** Write the service using Rust.
--   **Dockerization:** Containerize the service using Docker.
--   **Deployment:** Deploy using Kubernetes manifests.
+The project workflow is driven by CKA related topics and tasks:
+
+1.  **CKA Topic Selection:** We will start by selecting a CKA related topic.
+2.  **Hands-On Tasks:** We will develop a set of hands-on tasks tied to that topic.
+3.  **Study and Practice:** You will study the CKA concept and implement the tasks in the project.
+4.  **Experiment and Review:** You can experiment with different approaches, and have your code reviewed to ensure your understanding.
 
 ## Task Management
 
--   This project uses GitHub Projects for task management.
--   Each task is tracked using GitHub Issues.
+*   This project uses GitHub Projects for task management.
+*   Each task is tracked using GitHub Issues.
 
 ## Contributing
 
-This is a personal project, so contributions are currently not expected. However, feedback and suggestions are always welcome!
+This is a personal project, and contributions are currently not expected. However, feedback and suggestions are always welcome!
 
 ## License
 
+[Optional: Add a license if you wish]
