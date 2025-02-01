@@ -14,7 +14,7 @@ This is primarily a learning project, so flexibility and experimentation are enc
 
 ## Technologies Used
 
--   **Containerization:** Docker
+-   **Containerization:** Docker (Orbstack)
 -   **Orchestration:** Kubernetes
 -   **Programming Language:** Rust (with potential exploration of Zig for specific components)
 -   **Secrets Management:** Doppler
